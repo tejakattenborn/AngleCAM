@@ -9,6 +9,8 @@ Leaf angles are relevant for various applications (e.g., modelling radiative tra
 
 AngleCam is based on Convolutional Neural Networks (at current stage with the EfficientNet backbone). We trained the models with several thousand reference samples that were generated from visual interpretation of invidiual image frames. For each image frame, we sampled 20 leaves, which were then converted to a leaf angle distribution (beta distribution). The CNN models were, hence, trained to predict a leaf angle distribution for each individual image. The model accuracy was estimated from independent holdouts. Additionally, we performed a independent validation using terrestrial laser scanning and the [TLSLeAF method by Atticus Stovall](https://github.com/aestovall/TLSLeAF).
 
+![val](https://github.com/tejakattenborn/AngleCAM/blob/main/AngleCam_val.png)
+
 ### Examples
 
 ![diurnal](https://github.com/tejakattenborn/AngleCAM/blob/main/result_small_mod.gif)
