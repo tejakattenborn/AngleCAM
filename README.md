@@ -14,6 +14,7 @@
 Leaf angles are relevant for various applications (e.g., modelling radiative transfer in plants, producitvity, or Earth systems). Measuring or tracking leaf angles through time is, hence, of vital importance for various disciplines. AngleCam is a deep learning-based method to predict leaf angle distributions from horizontal photographs. AngleCam can be applied on single photographs or time series. AngleCam was evaluated over various species, growth forms and for predicting time series over several months at 3-min intervals under field conditions (the manuscript describing the method is currently in review). The underlying CNN models of AngleCam were trained with the Brinno TLC-200 Pro camera. The latter is low-cost and outdoor ready and enables to acquire time series up to several month. AngleCam may also be applicable to other cameras as long as their properties are comparable (Field of view, etc...).
 
 ![diurnal](https://github.com/tejakattenborn/AngleCAM/blob/main/result_small_mod.gif)
+
 *Animation of the AngleCam input and output. Note that the output (leaf angle distribution) is for simplicity integrated to average leaf angles. The animation shows that during a sunny day Tilia cordata tends to oscilate its leaf angles. The estimates show a relatively high variance, mostly caused by small changes in leaf orientation due to wind. Despite considerable variation in illumination conditions, the predictions show a relatively stable course during the day.*
 
 ## Approach and evaluation
