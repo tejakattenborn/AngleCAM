@@ -183,7 +183,7 @@ for(i in 1:nrow(cam_setup)){
                      expand = c(0, 0)) +
     scale_y_continuous(limits = ylims) +
     xlab(NULL) +#xlab("Date") +
-    ylab("Avg. angle [°]") +
+    ylab("Avg. angle [Â°]") +
     theme_classic()
   
   # add rolling mean
@@ -454,9 +454,9 @@ for(i in 1:length(cam_setup[,1])){
     scale_x_continuous(limits = c(min(rf_eval_avg),quantile(unlist(rf_eval_avg), 0.99))) +
     scale_y_continuous(limits = c(min(rf_eval_avg),quantile(unlist(rf_eval_avg), 0.99))) +
     coord_fixed() +
-    annotate(geom="text", x=quantile(unlist(rf_eval_avg), 0.05), y=quantile(unlist(rf_eval_avg), 0.98), label = paste0("R² = ", round(as.numeric(cor.test(rf_eval_avg$observed, rf_eval_avg$predicted)$estimate^2), 3))) +
-    xlab("observed avg [°]") +
-    ylab("predicted avg [°]") +
+    annotate(geom="text", x=quantile(unlist(rf_eval_avg), 0.05), y=quantile(unlist(rf_eval_avg), 0.98), label = paste0("RÂ² = ", round(as.numeric(cor.test(rf_eval_avg$observed, rf_eval_avg$predicted)$estimate^2), 3))) +
+    xlab("observed avg [Â°]") +
+    ylab("predicted avg [Â°]") +
     theme_classic()
   ggsave(filename = paste0("plots_timeseries_prediction/rf_model_avg_",camera, ".png"),
          width = 3, height = 3.1, plot)
@@ -468,9 +468,9 @@ for(i in 1:length(cam_setup[,1])){
     scale_x_continuous(limits = c(min(rf_eval_sd),quantile(unlist(rf_eval_sd), 0.99))) +
     scale_y_continuous(limits = c(min(rf_eval_sd),quantile(unlist(rf_eval_sd), 0.99))) +
     coord_fixed() +
-    annotate(geom="text", x=quantile(unlist(rf_eval_sd), 0.05), y=quantile(unlist(rf_eval_sd), 0.98), label = paste0("R² = ", round(as.numeric(cor.test(rf_eval_sd$observed, rf_eval_sd$predicted)$estimate^2), 3))) +
-    xlab("observed sd [°]") +
-    ylab("predicted sd [°]") +
+    annotate(geom="text", x=quantile(unlist(rf_eval_sd), 0.05), y=quantile(unlist(rf_eval_sd), 0.98), label = paste0("RÂ² = ", round(as.numeric(cor.test(rf_eval_sd$observed, rf_eval_sd$predicted)$estimate^2), 3))) +
+    xlab("observed sd [Â°]") +
+    ylab("predicted sd [Â°]") +
     theme_classic()
   ggsave(filename = paste0("plots_timeseries_prediction/rf_model_sd_",camera, ".png"),
          width = 3, height = 3.1, plot)
@@ -547,7 +547,7 @@ rf_varimp_sd
 ylims = c(10, 31)
 plot_temp = ggplot(data=weather, aes(x=date, y=Ltemp)) +
   geom_line(colour = "red3") +
-  ylab("temp. [°C]") +
+  ylab("temp. [Â°C]") +
   xlab(NULL) +
   scale_x_datetime(labels = date_format("%d-%m-%y", tz = "Europe/Berlin"), 
                    breaks = date_breaks("10 days"), 
@@ -602,7 +602,7 @@ plot_rain
 ylims = c(min(weather$SPN1_Total, na.rm=T), max(weather$SPN1_Total, na.rm=T))
 plot_solar = ggplot(data=weather, aes(x=date, y=SPN1_Total)) +
   geom_line(colour = "orange2") +
-  ylab("rad. [W/m²]") +
+  ylab("rad. [W/mÂ²]") +
   xlab(NULL) +
   scale_x_datetime(labels = date_format("%d-%m-%y", tz = "Europe/Berlin"), 
                    breaks = date_breaks("10 days"), 
@@ -684,7 +684,7 @@ plot_windpeak
 ylims = c(435, 540)
 plot_soil = ggplot(data=weather, aes(x=date, y=BF2)) +
   geom_line(colour = "deeppink3") +
-  ylab("soil [m³/mm]") +
+  ylab("soil [mÂ³/mm]") +
   xlab(NULL) +
   scale_x_datetime(labels = date_format("%d-%m-%y", tz = "Europe/Berlin"), 
                    breaks = date_breaks("10 days"), 
