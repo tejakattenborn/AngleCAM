@@ -69,7 +69,7 @@ plot_test = ggplot(test_dat, aes(x=test_pred_avg, y=test_ref_avg)) +
   coord_fixed() +
   ylab("Avg. angle reference") +
   xlab("Avg. angle prediction") +
-  annotate(geom="text", x=50, y=20, label=paste0("R² = ", round(cor.test(test_dat$test_pred_avg, test_dat$test_ref_avg)$estimate^2, 2)))+
+  annotate(geom="text", x=50, y=20, label=paste0("RÂ² = ", round(cor.test(test_dat$test_pred_avg, test_dat$test_ref_avg)$estimate^2, 2)))+
   theme_classic()
 plot_test
 ggsave(filename = paste0(model_version, "compare_pred_vs_ref_test.pdf"),
@@ -85,7 +85,7 @@ plot_train = ggplot(train_dat, aes(x=train_pred_avg, y=train_ref_avg)) +
   coord_fixed() +
   ylab("Avg. angle reference") +
   xlab("Avg. angle prediction") +
-  annotate(geom="text", x=50, y=20, label=paste0("R² = ", round(cor.test(train_dat$train_pred_avg, train_dat$train_ref_avg)$estimate^2, 2)))+
+  annotate(geom="text", x=50, y=20, label=paste0("RÂ² = ", round(cor.test(train_dat$train_pred_avg, train_dat$train_ref_avg)$estimate^2, 2)))+
   theme_classic()
 plot_train
 ggsave(filename = paste0(model_version, "compare_pred_vs_ref_train.pdf"),
