@@ -130,7 +130,7 @@ for(i in 1:length(tls_files)){
   p <- ggplot(data=df, aes(x=breaker)) + 
     geom_polygon(aes(y=tls), fill=col_tls, colour = line_color, size = line_size, alpha=0.3) +
     geom_polygon(aes(y=brinno), fill=col_brinno, colour = line_color, size = line_size, alpha=0.3) +
-    xlab("leaf angle [°]") + ylab("density") +
+    xlab("leaf angle [Â°]") + ylab("density") +
     theme_minimal()
   ggsave(filename = paste0("data_2022_brinno_tls_validation/2022_01_results/compare_density_tls_plant_", sprintf("%02d", i), ".pdf"),
          width = 3, height = 3, p)
@@ -165,7 +165,7 @@ plot = ggplot(avg, aes(x=avg_brinno, y=avg_tls)) +
   scale_x_continuous(limits = lims) +
   scale_y_continuous(limits = lims) +
   coord_fixed() +
-  annotate(geom="text", x=50, y=30, label = paste0("R² = ", round(as.numeric(cor.test(avg$avg_tls, avg$avg_brinno)$estimate^2), 2))) +
+  annotate(geom="text", x=50, y=30, label = paste0("RÂ² = ", round(as.numeric(cor.test(avg$avg_tls, avg$avg_brinno)$estimate^2), 2))) +
   xlab("Avg. angle Brinno") +
   ylab("Avg. angle TLS") +
   theme_classic()
