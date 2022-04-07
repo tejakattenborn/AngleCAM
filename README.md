@@ -26,7 +26,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with the Ef
 
 Scripts for running AngleCam can be found in [code_run_AngleCam](https://github.com/tejakattenborn/AngleCAM/tree/main/code_run_AngleCam).
 
-The mandatory model object (hdf5) and example data are available here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.746048.svg)](https://doi.org/10.6084/m9.figshare.19544134)
+The mandatory model object (hdf5) and example data are available here https://doi.org/10.6084/m9.figshare.19544134
 
 <iframe src="https://widgets.figshare.com/articles/19544134/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
