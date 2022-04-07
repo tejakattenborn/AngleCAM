@@ -3,8 +3,8 @@
 ## Contents
 
 [Introduction](#Introduction)
-[Approach and evaluation](#Approach and evaluation)
-[Use AngleCam and how to contribute](#Use AngleCam and how to contribute)
+[Approach and evaluation](#approach-and-evaluation)
+[Use AngleCam and how to contribute](#Use-AngleCam-and-how-to-contribute)
 
 
 ## Introduction
