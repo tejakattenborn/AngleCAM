@@ -30,7 +30,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 ![tls validation](https://github.com/tejakattenborn/AngleCAM/blob/main/tlsleaf_anglecam_comparison.png) 
 
-*Model evaluation based on training data, test data and terrestrial laser scanning. A manuscript describing the method and its evaluation is currently in review.*
+*Comparison of AngleCam and TLSLeAF for predicting leaf angle distributions.*
 
 
 ## Use AngleCam and how to contribute
