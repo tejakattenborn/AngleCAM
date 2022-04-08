@@ -30,8 +30,10 @@ library(tensorflow)
 library(keras)
 library(dplyr)
 library(tfdatasets)
+# make sure you downloaded the model weights (and maybe some example data): https://doi.org/10.6084/m9.figshare.19544134
 
-setwd("/net/home/tkattenborn/data_brinno/data_2021_lak_brinno/1_AngleCam_application")
+# define directory where the R-scripts, the model file (.hdf5) and a subdirectory with the image data is located.
+setwd("INSERT DIR")
 
 ### GPU settings (only needed if tensorflow is run on GPU, recommended but not mandatory; CPU also works)
 gpu <- tf$config$experimental$get_visible_devices('GPU')[[1]] # initialize GPU
