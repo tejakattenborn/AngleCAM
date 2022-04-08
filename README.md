@@ -15,7 +15,7 @@ Vertical leaf surface angles are relevant for various applications (e.g., modell
 
 ![diurnal](https://github.com/tejakattenborn/AngleCAM/blob/main/result_small_mod.gif)
 
-*Animation of the AngleCam input (image frames) and output (leaf angle estimates). Note that here the output (leaf angle distribution) is for simplicity integrated to average leaf angles. The animation shows that during a sunny day Tilia cordata tends to oscilate its leaf angles. The estimates show a relatively high variance, mostly caused by small changes in leaf orientation due to wind. Despite considerable variation in illumination conditions, the predictions show a relatively stable course during the day.*
+*Animation of the AngleCam input (image frames) and output (leaf angle estimates) for a Tilia cordata crown at 20 m height. Note that here the output (leaf angle distribution) is for simplicity integrated to average leaf angles. The animation shows that during a sunny day Tilia cordata tends to oscilate its leaf angles. The estimates show a relatively high variance, mostly caused by small changes in leaf orientation due to wind. Despite considerable variation in illumination conditions, the predictions show a relatively stable course during the day.*
 
 ## Approach and evaluation
 
