@@ -26,6 +26,11 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 *Model evaluation based on training data, test data and terrestrial laser scanning. A manuscript describing the method and its evaluation is currently in review.*
 
+![tls validation](https://github.com/tejakattenborn/AngleCAM/blob/main/tlsleaf_anglecam_comparison.png) ![val](https://github.com/tejakattenborn/AngleCAM/blob/main/tlsleaf_anglecam_comparison.png)
+
+*Model evaluation based on training data, test data and terrestrial laser scanning. A manuscript describing the method and its evaluation is currently in review.*
+
+
 ## Use AngleCam and how to contribute
 
 * R-Scripts for running AngleCam can be found in [code_run_AngleCam](https://github.com/tejakattenborn/AngleCAM/tree/main/code_run_AngleCam).
