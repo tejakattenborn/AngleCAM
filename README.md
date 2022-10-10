@@ -39,8 +39,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 * The mandatory model object (hdf5) and example data can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6812085.svg)](https://doi.org/10.5281/zenodo.6812085)
 
-* Further details on the method and its evaluation are given in [![DOI:10.1111/2041-210X.13968](http://img.shields.io/badge/DOI-10.1111/2041-210X.13968-B31B1B.svg)](https://doi.org/10.1111/2041-210X.13968)
-
+* Further details on the method and its evaluation are given in [![DOI:10.1111/2041-210X.13968](https://img.shields.io/badge/doi-10.1111%2F2041--210X.13968-red)](https://doi.org/10.1111/2041-210X.13968)
 
 The code requires a running TensorFlow installation (see script for some help ressources). 
 Please contact me if you find any bugs or have problems getting the models running:
