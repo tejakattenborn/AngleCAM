@@ -40,7 +40,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 * The mandatory model object (hdf5) and example data can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6812085.svg)](https://doi.org/10.5281/zenodo.6812085)
 
-* Further details on the method and its evaluation are published (2022) in Methods in Ecology and Evolution [![DOI:10.1111/2041-210X.13968](https://img.shields.io/badge/doi-10.1111%2F2041--210X.13968-red)
+* Further details on the method and its evaluation are published (2022) in Methods in Ecology and Evolution [DOI:10.1111/2041-210X.13968](https://img.shields.io/badge/DOI-10.1111%252F2041----210X.13968-red)
 
 
 
