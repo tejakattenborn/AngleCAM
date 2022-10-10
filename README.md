@@ -13,10 +13,7 @@
 
 <img align="left" width="200" height="200" src="https://github.com/tejakattenborn/AngleCAM/blob/main/illustrations_small.png">
 Vertical leaf surface angles are relevant for various applications (e.g., modelling radiative transfer in plants, producitvity, or Earth systems). Measuring or tracking leaf angles through time is, hence, of vital importance for various disciplines. AngleCam is a deep learning-based method to predict leaf angle distributions from horizontal photographs. AngleCam can be applied on single photographs or time series. AngleCam was evaluated over various species, growth forms and for predicting time series over several months at 3-min intervals under field conditions.
-The underlying CNN models of AngleCam were trained with the Brinno TLC-200 Pro camera. The latter is low-cost and outdoor ready and enables to acquire time series up to several month. AngleCam may also be applicable to other cameras as long as their properties are comparable (Field of view, etc.).
-The full methodology is published in
-
-[Methods in Ecology and Evolution](https://doi.org/10.1111/2041-210X.13968)<br/>
+The underlying CNN models of AngleCam were trained with the Brinno TLC-200 Pro camera. The latter is low-cost and outdoor ready and enables to acquire time series up to several month. AngleCam may also be applicable to other cameras as long as their properties are comparable (Field of view, etc.).<br/>
 
 <br/>
 
@@ -43,7 +40,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 * The mandatory model object (hdf5) and example data can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6812085.svg)](https://doi.org/10.5281/zenodo.6812085)
 
-* Further details on the method and its evaluation are published (2022) in Methods in Ecology and Evolution [![DOI:10.1111/2041-210X.13968]([https://img.shields.io/badge/doi-10.1111%2F2041--210X.13968-red)](https://doi.org/10.1111/2041-210X.13968)
+* Further details on the method and its evaluation are published (2022) in Methods in Ecology and Evolution [![DOI:10.1111/2041-210X.13968](https://img.shields.io/badge/doi-10.1111%2F2041--210X.13968-red)
 
 
 
