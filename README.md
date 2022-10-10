@@ -43,6 +43,9 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 * Further details on the method and its evaluation are published (2022) in Methods in Ecology and Evolution [![DOI:10.1111/2041-210X.13968](https://img.shields.io/badge/DOI-10.1111%252F2041----210X.13968-red)]
 
 
+[![DOI](https://img.shields.io/badge/DOI-10.1111%252F2041----210X.13968-red)](https://doi.org/10.1111/2041-210X.13968)
+
+
 
 The code requires a running TensorFlow installation (see script for some help ressources). 
 Please contact me if you find any bugs or have problems getting the models running:
