@@ -36,7 +36,7 @@ AngleCam is based on Convolutional Neural Networks (at current stage with Tensor
 
 ## Use AngleCam and how to contribute
 
-* R-Scripts for running AngleCam can be found in [code_run_AngleCam](https://github.com/tejakattenborn/AngleCAM/tree/main/code_run_AngleCam).
+* R- and Python-Scripts for running AngleCam can be found in [code_run_AngleCam](https://github.com/tejakattenborn/AngleCAM/tree/main/code_run_AngleCam).
 
 * The mandatory model object (hdf5) and example data can be downloaded from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8008113.svg)](https://doi.org/10.5281/zenodo.8008113)
 
