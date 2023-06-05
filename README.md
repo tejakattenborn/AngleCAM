@@ -49,3 +49,9 @@ Please contact me if you find any bugs or have problems getting the models runni
 https://rsc4earth.de/authors/tkattenborn/     https://twitter.com/TejaKattenborn
 
 Current evaluations indicate the transferability of the approach across scence conditions, species and plant forms. However, we cannot eventually state how well the models perform on your datasets (which may be composed of very different species, leaf forms or cameras). Additional labels (reference data) may be helpful to tune the model towards you application scenario. A [R-script](https://github.com/tejakattenborn/AngleCAM/blob/main/code_manuscript/01_labelling_leaf_angles.R) for producing new reference data is included in this repository. We would be very thankful if you would share these samples with us, so we can continuously improve the model performance and transferability. In return, we provide you a model object that was optimized for your data. AngleCam is truly in a alpha-phase and it success also depends on your help. Contributors will ofcourse be involved in upcoming analysis and scientific output.
+
+## Acknowledgements
+
+* Many thanks for funding to the German Centre for Integrative Biodiversity Research (iDiv) and Leipzig University.
+
+* Thanks to Marco Bobbinger for setting up the example.
