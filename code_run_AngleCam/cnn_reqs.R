@@ -11,14 +11,15 @@
 
 
 # image settings
-xres = 512L # max 1280 with brinno
-yres = 512L #  max 690 with brinno
-no_bands = 3L # RGB
-angle_resolution = 45L-2L # intervals of the leaf angle distributions
+xres = 600L # max 1280 with brinno
+yres = 600L #  max690 with brinno
+no_bands = 3L
+angle_resolution = 45L-2L
+
 
 # hyperparameters
-batch_size <- 10L # 8 for 256 * 256
-num_epochs <- 200L
+batch_size <- 9L # 8 for 256 * 256
+num_epochs <- 500L
 
 
 # tfdatasets input pipeline -----------------------------------------------
@@ -97,22 +98,23 @@ create_dataset <- function(data,
 
 
 # Definition of the CNN structure -----------------------------------------------
-
-base_model <- application_efficientnet_b7(
-  input_shape = c(xres, yres, no_bands),
-  include_top = FALSE,
-  drop_connect_rate=0.1, # 0.2 is default
-  #include_preprocessing=True,
-  pooling = NULL
-)
-
-# custom layers v2
-predictions <- base_model$output %>%
-  layer_global_average_pooling_2d() %>%
-  layer_dense(units = angle_resolution, activation = 'linear')
-
-# merge base model and custom layers
-model <- keras_model(inputs = base_model$input, outputs = predictions)
-
-# compile
-model %>% compile(optimizer = optimizer_adam(learning_rate = 0.0001), loss = 'mse') # mse or mae?
+# 
+# base_model <- tf$keras$applications$EfficientNetV2L(
+#   input_shape = c(xres, yres, no_bands),
+#   include_top = FALSE,
+#   include_preprocessing = FALSE,
+#   weights = NULL,
+#   pooling = NULL
+# )
+# 
+# # custom layers v2
+# predictions <- base_model$output %>%
+#   layer_global_average_pooling_2d() %>%
+#   layer_dropout(rate = 0.1) %>%
+#   layer_dense(units = angle_resolution, activation = 'linear')
+# 
+# # merge base model and custom layers
+# model <- keras_model(inputs = base_model$input, outputs = predictions)
+# 
+# # compile
+# model %>% compile(optimizer = optimizer_adam(learning_rate = 0.0001), loss = 'mse') # mse or mae?
