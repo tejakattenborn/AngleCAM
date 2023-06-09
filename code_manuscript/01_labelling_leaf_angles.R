@@ -30,13 +30,14 @@ pics = pics[c(which(grepl("raw", pics)))]
 
 for(ii in sample(1:length(pics))){
   
-  if(file.exists(paste0(sub('\\.png$', '', pics[ii]), ".csv") ) == F){
+  if(file.exists(paste0(sub('\\.jpg$', '', pics[ii]), ".csv") ) == F){
     pic = stack(pics[ii])
 
     ysamp = seq(0+100, dim(pic)[1]-100, length.out = 5)
     xsamp = seq(0+100, dim(pic)[2]-100, length.out = 6)
     samp = expand.grid(xsamp, ysamp)
     
+    #x11()
     plotRGB(pic)
     points(samp, cex = 5, col="red", pch=3)
     obs_all = data.frame(id = NA, x=NA, Y=NA, angle = NA, rolling = NA)
